@@ -272,3 +272,18 @@ footer {
     color: white;
     padding: 16px;
 }
+
+.view-link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Media Queries */
+@media(max-width: 700px) {
+    .top-container {
+        grid-template-areas:
+        'showcase showcase';
+    }
+}
