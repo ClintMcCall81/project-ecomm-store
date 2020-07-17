@@ -1,1 +1,274 @@
-/* Note there a few "reset" styles given in reset.css. You may opt to remove those if you wish. */
+
+html {
+    box-sizing: border-box; /* Doesent affect witdh when using padding */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    colour:  #ffffff;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+.btn {
+    background: #4b4b4b;
+    color: white;
+    padding: 9.6px 20.8px;
+    text-decoration: none;
+    border: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Grid Setup */
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* Nav */
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0px;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr); /* https://developer.mozilla.org/en-US/docs/Web/CSS/flex_value#fr */
+}
+
+.main-nav a {
+    background: #ffffff;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color:  #4b4b4b;
+    text-transform: uppercase;
+    font-size: 24px;
+    
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    /* Template format, i didnt know this existed till now. */
+    grid-template-areas:
+    'showcase showcase showcase'
+    'showcase showcase showcase';
+}
+
+.mid-container {
+    display: grid;
+    grid-gap: 20px;
+    /* Template format, i didnt know this existed till now. */
+    grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-a';
+}
+
+/* Assign Grid Content */
+.showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    max-width: 100%;
+    background: url(/img/Another-Welcome-img.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 48px;
+    /* Flex box */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.showcase h1 {
+    font-size: 64px;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+.showcase p {
+    font-size: 21px;
+    margin-top: 0px;
+    color: #ffffff;
+}
+
+.top-box {
+    background: #ffffff;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    padding: 20px;
+}
+
+.top-box .price {
+    font-size: 40px;
+}
+
+.top-box-a h4 {
+    font-size: 20px;
+}
+.top-box-b h4 {
+    font-size: 20px;
+}
+ /* Mid Box */
+ .product-listing {
+    grid-area: showcase;
+    height: 400px;
+    max-width: 100%;
+    background: url(/img/human_lost_hero_background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 48px;
+    /* Flex box */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.product-listing h1 {
+    font-size: 64px;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+.product-listing p {
+    font-size: 21px;
+    margin-top: 0px;
+    color: #ffffff;
+}
+
+.mid-box-a {
+    grid-area: top-box-a;
+    width: 350px;
+}
+.mid-box-a span {
+    color: red;
+}
+
+.mid-box-b {
+    grid-area: top-box-b;
+    width: 350px;
+}
+
+.mid-box {
+    background: #ffffff;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    padding: 20px;
+}
+
+.mid-box .price {
+    font-size: 40px;
+}
+
+.mid-box-a h4 {
+    font-size: 20px;
+}
+.mid-box-b h4 {
+    font-size: 20px;
+}
+
+.mid-box-a {
+    grid-area: top-box-a;
+    width: 350px;
+}
+
+.mid-box-b {
+    grid-area: top-box-b;
+    width: 350px;
+}
+
+.boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Learnt something new */  
+}
+
+.box h2 {
+    font-size: 40px;
+}
+
+.box {
+    background: #ffffff;
+    text-align: center;
+    padding: 24px 32px;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.product-listings-01 {
+    background: black;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.product-listings-01 h2 {
+    color: white;
+}
+.product-listings-01 p {
+    color: white;
+}
+.product-listings-01 .btn {
+    background: #24d8cf;
+    color: white;
+}
+
+.product-listings-02 {
+    background: #ffffff;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.product-listings-02 h2 {
+    color:black ;
+}
+.product-listings-02 p {
+    color: black;
+}
+.product-listings-02 .btn {
+    background: #f8656ce3 ;
+    color: white;
+}
+
+.product-listings-03 {
+    background: white;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.product-listings-03 h2 {
+    color: black;
+}
+.product-listings-03 p {
+    color: black ;
+}
+.product-listings-03 .btn {
+    background: #20dd1a ;
+    color: white;
+}
+
+.featured {
+    font-size: 24px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 32px;
+    background: #4b4b4b;
+    color: white;
+    padding: 16px;
+}
