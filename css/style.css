@@ -159,9 +159,8 @@ img {
     grid-gap: 20px;
     /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
     grid-template-areas:
-    'listing-01 listing-02'
-    'listing-03 listing-04'
-    'listing-05 listing-06';
+    'listing-01 listing-02 listing-03'
+    'listing-04 listing-05 listing-06';
 }
 
 .box-listings h2 {
@@ -172,7 +171,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/human-lost.jpg);
+    background: url(/img/human-lost.png);
     background-size: cover; 
     background-position: center;
     padding: 24px 32px;
@@ -182,11 +181,16 @@ img {
     background: #24d8cf;
     color: white;
 }
+.listing-01 .btn:hover {
+    background: #178d87;
+    color: white;
+}
 
 .listing-02 {
     background: #ffffff;
+    color: white;
     text-align: center;
-    background: url(/img/darling-in-the-franxx.jpg);
+    background: url(/img/darling-in-the-franxx.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -196,12 +200,16 @@ img {
     background: #e6846c ;
     color: white;
 }
+.listing-02 .btn:hover {
+    background: #aa6250 ;
+    color: white;
+}
 
 .listing-03 {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/seraph-of-the-end.jpg);
+    background: url(/img/seraph-of-the-end.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -211,19 +219,27 @@ img {
     background: #20dd1a ;
     color: white;
 }
+.listing-03  .btn:hover {
+    background: #149410 ;
+    color: white;
+}
 
 .listing-04 {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/guilty-crown.jpg);
+    background: url(/img/guilty-crown.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 .listing-04 .btn {
-    background: #20dd1a ;
+    background: #388ae7 ;
+    color: white;
+}
+.listing-04 .btn:hover {
+    background: #20548f;
     color: white;
 }
 
@@ -231,7 +247,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/rising-of-the-shield-hero.jpg);
+    background: url(/img/rising-of-the-shield-hero.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -241,19 +257,27 @@ img {
     background: #20dd1a ;
     color: white;
 }
+.listing-05 .btn:hover {
+    background: #149410 ;
+    color: white;
+}
 
 .listing-06 {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/overlord.jpg);
+    background: url(/img/overlord.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 .listing-06 .btn {
-    background: #20dd1a ;
+    background: #c0351d ;
+    color: white;
+}
+.listing-06 .btn:hover {
+    background: #752011 ;
     color: white;
 }
 /* Product Anime Listings END */
@@ -264,7 +288,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/seraph-of-the-end.jpg);
+    background: url(/img/goblin-slayer.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -279,7 +303,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/seraph-of-the-end.jpg);
+    background: url(/img/solo-leveling.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -294,7 +318,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/seraph-of-the-end.jpg);
+    background: url(/img/lessa-the-crimson-knight.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -309,7 +333,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/seraph-of-the-end.jpg);
+    background: url(/img/virus-girlfriend.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
