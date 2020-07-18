@@ -12,7 +12,15 @@ body {
 }
 
 .btn {
-    background: #4b4b4b;
+    background: #ff2424;
+    color: white;
+    padding: 9.6px 20.8px;
+    text-decoration: none;
+    border: 0px;
+}
+
+.sub-btn {
+    background: #777777;
     color: white;
     padding: 9.6px 20.8px;
     text-decoration: none;
@@ -24,13 +32,13 @@ img {
 }
 
 /* Grid Setup */
-.wrapper {
+.grid-layout {
     display: grid;
     grid-gap: 20px;
 }
 
 /* Nav */
-.main-nav ul {
+.navbar ul {
     display: grid;
     grid-gap: 20px;
     padding: 0px;
@@ -38,7 +46,7 @@ img {
     grid-template-columns: repeat(4, 1fr); /* https://developer.mozilla.org/en-US/docs/Web/CSS/flex_value#fr */
 }
 
-.main-nav a {
+.navbar a {
     background: #ffffff;
     display: block;
     text-decoration: none;
@@ -50,7 +58,7 @@ img {
     
 }
 
-.main-nav a:hover {
+.navbar a:hover {
     text-decoration: underline;
     color: black;
     font-weight: bold;
@@ -101,25 +109,6 @@ img {
     color: #ffffff;
 }
 
-.top-box {
-    background: #ffffff;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-    padding: 20px;
-}
-
-.top-box .price {
-    font-size: 40px;
-}
-
-.top-box-a h4 {
-    font-size: 20px;
-}
-.top-box-b h4 {
-    font-size: 20px;
-}
  /* Mid Box */
  .product-listing {
     grid-area: showcase;
@@ -147,48 +136,6 @@ img {
     color: #ffffff;
 }
 
-.mid-box-a {
-    grid-area: top-box-a;
-    width: 350px;
-}
-.mid-box-a span {
-    color: red;
-}
-
-.mid-box-b {
-    grid-area: top-box-b;
-    width: 350px;
-}
-
-.mid-box {
-    background: #ffffff;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-    padding: 20px;
-}
-
-.mid-box .price {
-    font-size: 40px;
-}
-
-.mid-box-a h4 {
-    font-size: 20px;
-}
-.mid-box-b h4 {
-    font-size: 20px;
-}
-
-.mid-box-a {
-    grid-area: top-box-a;
-    width: 350px;
-}
-
-.mid-box-b {
-    grid-area: top-box-b;
-    width: 350px;
-}
 
 .boxes {
     display: grid;
@@ -207,59 +154,169 @@ img {
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
-.product-listings-01 {
-    background: black;
+/* Product Anime Listings */
+.box-listings {
     display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Learnt something new */  
+}
+
+.box-listings h2 {
+    font-size: 40px;
+}
+
+.listing-01 {
+    background: #ffffff;
+    color: white;
+    text-align: center;
+    background: url(/img/human_lost_hero_background.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 24px 32px;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
-.product-listings-01 h2 {
-    color: white;
-}
-.product-listings-01 p {
-    color: white;
-}
-.product-listings-01 .btn {
+.listing-01 .btn {
     background: #24d8cf;
     color: white;
 }
 
-.product-listings-02 {
+.listing-02 {
     background: #ffffff;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    background: url(/img/wp2475712.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 24px 32px;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
-.product-listings-02 h2 {
-    color:black ;
-}
-.product-listings-02 p {
-    color: black;
-}
-.product-listings-02 .btn {
-    background: #f8656ce3 ;
+.listing-02 .btn {
+    background: #e6846c ;
     color: white;
 }
 
-.product-listings-03 {
-    background: white;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
+.listing-03 {
+    background: #ffffff;
+    color: white;
+    text-align: center;
+    background: url(/img/seraph-of-the-end.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 24px 32px;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
-.product-listings-03 h2 {
-    color: black;
-}
-.product-listings-03 p {
-    color: black ;
-}
-.product-listings-03 .btn {
+.listing-03 .btn {
     background: #20dd1a ;
     color: white;
 }
+
+.listing-04 {
+    background: #ffffff;
+    color: white;
+    text-align: center;
+    background: url(/img/seraph-of-the-end.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 24px 32px;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.listing-04 .btn {
+    background: #20dd1a ;
+    color: white;
+}
+
+.listing-05 {
+    background: #ffffff;
+    color: white;
+    text-align: center;
+    background: url(/img/seraph-of-the-end.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 24px 32px;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.listing-05 .btn {
+    background: #20dd1a ;
+    color: white;
+}
+
+.listing-06 {
+    background: #ffffff;
+    color: white;
+    text-align: center;
+    background: url(/img/seraph-of-the-end.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 24px 32px;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.listing-06 .btn {
+    background: #20dd1a ;
+    color: white;
+}
+/* Product Anime Listings END */
+
+
+/* Product Manga Listings */
+.listing-07 {
+    background: #ffffff;
+    color: white;
+    text-align: center;
+    background: url(/img/seraph-of-the-end.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 24px 32px;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.listing-07 .btn {
+    background: #20dd1a ;
+    color: white;
+}
+
+.listing-08 {
+    background: #ffffff;
+    color: white;
+    text-align: center;
+    background: url(/img/seraph-of-the-end.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 24px 32px;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.listing-08 .btn {
+    background: #20dd1a ;
+    color: white;
+}
+
+.listing-09 {
+    background: #ffffff;
+    color: white;
+    text-align: center;
+    background: url(/img/seraph-of-the-end.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 24px 32px;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.listing-09 .btn {
+    background: #20dd1a ;
+    color: white;
+}
+
+.listing-10 {
+    background: #ffffff;
+    color: white;
+    text-align: center;
+    background: url(/img/seraph-of-the-end.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 24px 32px;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+.listing-10 .btn {
+    background: #20dd1a ;
+    color: white;
+}
+/* Product Manga Listings END */
 
 .featured {
     font-size: 24px;
@@ -282,8 +339,11 @@ footer {
 
 /* Media Queries */
 @media(max-width: 700px) {
-    .top-container {
-        grid-template-areas:
-        'showcase showcase';
+    .main-nav ul {
+        grid-template-columns: 1fr; /* Puts them in one row each after the screen shrinks */
+    }
+    .box h2 {
+        font-size: 25px;
+        font-weight: bolder;
     }
 }
