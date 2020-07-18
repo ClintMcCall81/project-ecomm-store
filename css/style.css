@@ -2,7 +2,6 @@
 html {
     box-sizing: border-box; /* Doesent affect witdh when using padding */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    colour:  #ffffff;
 }
 
 body {
@@ -158,7 +157,11 @@ img {
 .box-listings {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Learnt something new */  
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-areas:
+    'listing-01 listing-02'
+    'listing-03 listing-04'
+    'listing-05 listing-06';
 }
 
 .box-listings h2 {
@@ -169,8 +172,8 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/human_lost_hero_background.jpg);
-    background-size: cover;
+    background: url(/img/human-lost.jpg);
+    background-size: cover; 
     background-position: center;
     padding: 24px 32px;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
@@ -183,7 +186,7 @@ img {
 .listing-02 {
     background: #ffffff;
     text-align: center;
-    background: url(/img/wp2475712.jpg);
+    background: url(/img/darling-in-the-franxx.jpg);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -213,7 +216,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/seraph-of-the-end.jpg);
+    background: url(/img/guilty-crown.jpg);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -228,7 +231,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/seraph-of-the-end.jpg);
+    background: url(/img/rising-of-the-shield-hero.jpg);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -243,7 +246,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/seraph-of-the-end.jpg);
+    background: url(/img/overlord.jpg);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
