@@ -86,7 +86,7 @@ img {
     grid-area: showcase;
     min-height: 400px;
     max-width: 100%;
-    background: url(/img/Another-Welcome-img.jpg);
+    background: url(../img/Another-Welcome-img.jpg);
     background-size: cover;
     background-position: center;
     padding: 48px;
@@ -144,6 +144,16 @@ img {
 
 .box h2 {
     font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .box {
@@ -171,7 +181,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/human-lost.png);
+    background: url(../img/human-lost.png);
     background-size: cover; 
     background-position: center;
     padding: 24px 32px;
@@ -190,7 +200,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/darling-in-the-franxx.png);
+    background: url(../img/darling-in-the-franxx.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -209,7 +219,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/seraph-of-the-end.png);
+    background: url(../img/seraph-of-the-end.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -228,7 +238,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/guilty-crown.png);
+    background: url(../img/guilty-crown.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -247,7 +257,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/rising-of-the-shield-hero.png);
+    background: url(../img/rising-of-the-shield-hero.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -266,7 +276,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/overlord.png);
+    background: url(../img/overlord.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -288,7 +298,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/goblin-slayer.png);
+    background: url(../img/goblin-slayer.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -303,7 +313,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/solo-leveling.png);
+    background: url(../img/solo-leveling.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -318,7 +328,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/lessa-the-crimson-knight.png);
+    background: url(../img/lessa-the-crimson-knight.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -333,7 +343,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/virus-girlfriend.png);
+    background: url(../img/virus-girlfriend.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -365,12 +375,23 @@ footer {
 }
 
 /* Media Queries */
-@media(max-width: 700px) {
+@media(max-width: 900px) {
     .main-nav ul {
         grid-template-columns: 1fr; /* Puts them in one row each after the screen shrinks */
     }
     .box h2 {
         font-size: 25px;
         font-weight: bolder;
+    }
+    /* The box-listings where breaking so ive set them side by side by 2 instead of 3 */
+    .box-listings {
+        grid-template-areas:
+        'listing-01 listing-02'; 
+    }
+    .boxes {
+        grid-template-columns: 1fr;
+    }
+    .navbar ul {
+        grid-template-columns: 1fr;
     }
 }
