@@ -113,7 +113,7 @@ img {
     grid-area: showcase;
     height: 400px;
     max-width: 100%;
-    background: url(/img/human_lost_hero_background.jpg);
+    background: url(../img/human_lost_hero_background.jpg);
     background-size: cover;
     background-position: center;
     padding: 48px;
