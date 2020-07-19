@@ -86,7 +86,7 @@ img {
     grid-area: showcase;
     min-height: 400px;
     max-width: 100%;
-    background: url(/img/Another-Welcome-img.jpg);
+    background: url(./img/Another-Welcome-img.jpg);
     background-size: cover;
     background-position: center;
     padding: 48px;
