@@ -113,7 +113,7 @@ img {
     grid-area: showcase;
     height: 400px;
     max-width: 100%;
-    background: url(/img/human_lost_hero_background.jpg);
+    background: url(../img/human_lost_hero_background.jpg);
     background-size: cover;
     background-position: center;
     padding: 48px;
@@ -171,7 +171,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/human-lost.png);
+    background: url(../img/human-lost.png);
     background-size: cover; 
     background-position: center;
     padding: 24px 32px;
@@ -190,7 +190,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/darling-in-the-franxx.png);
+    background: url(../img/darling-in-the-franxx.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -209,7 +209,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/seraph-of-the-end.png);
+    background: url(../img/seraph-of-the-end.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -228,7 +228,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/guilty-crown.png);
+    background: url(../img/guilty-crown.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -247,7 +247,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/rising-of-the-shield-hero.png);
+    background: url(../img/rising-of-the-shield-hero.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -266,7 +266,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/overlord.png);
+    background: url(../img/overlord.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -288,7 +288,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/goblin-slayer.png);
+    background: url(../img/goblin-slayer.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -303,7 +303,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/solo-leveling.png);
+    background: url(../img/solo-leveling.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -318,7 +318,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/lessa-the-crimson-knight.png);
+    background: url(../img/lessa-the-crimson-knight.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
@@ -333,7 +333,7 @@ img {
     background: #ffffff;
     color: white;
     text-align: center;
-    background: url(/img/virus-girlfriend.png);
+    background: url(../img/virus-girlfriend.png);
     background-size: cover;
     background-position: center;
     padding: 24px 32px;
