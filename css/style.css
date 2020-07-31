@@ -58,8 +58,8 @@ img {
 }
 
 .navbar a:hover {
-    text-decoration: underline;
-    color: black;
+    background: rgb(255, 230, 0);
+    color: white;
     font-weight: bold;
 }
 
@@ -86,7 +86,7 @@ img {
     grid-area: showcase;
     min-height: 400px;
     max-width: 100%;
-    background: url(../img/Another-Welcome-img.jpg);
+    background: url(../img/yellow_orange_pattern_1674089705.jpg);
     background-size: cover;
     background-position: center;
     padding: 48px;
@@ -107,34 +107,6 @@ img {
     margin-top: 0px;
     color: #ffffff;
 }
-
- /* Mid Box */
- .product-listing {
-    grid-area: showcase;
-    height: 400px;
-    max-width: 100%;
-    background: url(../img/human_lost_hero_background.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 48px;
-    /* Flex box */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-}
-.product-listing h1 {
-    font-size: 64px;
-    margin-bottom: 0px;
-    color: #ffffff;
-}
-.product-listing p {
-    font-size: 21px;
-    margin-top: 0px;
-    color: #ffffff;
-}
-
 
 .boxes {
     display: grid;
@@ -163,197 +135,98 @@ img {
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
-/* Product Anime Listings */
+/* Pre-Order Listings */
 .box-listings {
     display: grid;
     grid-gap: 20px;
-    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-    grid-template-areas:
-    'listing-01 listing-02 listing-03'
-    'listing-04 listing-05 listing-06';
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
 }
 
 .box-listings h2 {
     font-size: 40px;
 }
+.box-listings p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
 
+.box-listings-02 {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.box-listings-02 .price {
+    color: red;
+}
+
+.box-listings-02 h2 {
+    font-size: 40px;
+}
+.box-listings-02 p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+/* Img Dimensions (300x450 */
 .listing-01 {
     background: #ffffff;
-    color: white;
+    color: Black;
+    max-width: 300px;
     text-align: center;
-    background: url(../img/human-lost.png);
+    background: white;
     background-size: cover; 
     background-position: center;
-    padding: 24px 32px;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    padding-bottom: 2em;
+}
+.listing-01 p {
+    padding-left: 2em;
+    padding-right: 2em;
 }
 .listing-01 .btn {
-    background: #24d8cf;
+    background: rgb(255, 230, 0);
     color: white;
 }
 .listing-01 .btn:hover {
-    background: #178d87;
+    background: rgb(209, 188, 0);
     color: white;
+}
+.listing-01 img {
+    max-height: 450px;
 }
 
-.listing-02 {
-    background: #ffffff;
-    color: white;
-    text-align: center;
-    background: url(../img/darling-in-the-franxx.png);
-    background-size: cover;
-    background-position: center;
-    padding: 24px 32px;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-}
-.listing-02 .btn {
-    background: #e6846c ;
-    color: white;
-}
-.listing-02 .btn:hover {
-    background: #aa6250 ;
-    color: white;
-}
+/* Pre-Order END */
 
-.listing-03 {
-    background: #ffffff;
-    color: white;
-    text-align: center;
-    background: url(../img/seraph-of-the-end.png);
-    background-size: cover;
-    background-position: center;
-    padding: 24px 32px;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-}
-.listing-03 .btn {
-    background: #20dd1a ;
-    color: white;
-}
-.listing-03  .btn:hover {
-    background: #149410 ;
-    color: white;
-}
 
+/* Weekly Deals */
 .listing-04 {
     background: #ffffff;
-    color: white;
+    color: Black;
+    max-width: 300px;
     text-align: center;
-    background: url(../img/guilty-crown.png);
-    background-size: cover;
+    background: white;
+    background-size: cover; 
     background-position: center;
-    padding: 24px 32px;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    padding-bottom: 2em;
+}
+.listing-04 p {
+    padding-left: 2em;
+    padding-right: 2em;
 }
 .listing-04 .btn {
-    background: #388ae7 ;
+    background: rgb(255, 230, 0);
     color: white;
 }
 .listing-04 .btn:hover {
-    background: #20548f;
+    background: rgb(209, 188, 0);
     color: white;
 }
-
-.listing-05 {
-    background: #ffffff;
-    color: white;
-    text-align: center;
-    background: url(../img/rising-of-the-shield-hero.png);
-    background-size: cover;
-    background-position: center;
-    padding: 24px 32px;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+.listing-04 img {
+    max-height: 450px;
 }
-.listing-05 .btn {
-    background: #20dd1a ;
-    color: white;
-}
-.listing-05 .btn:hover {
-    background: #149410 ;
-    color: white;
-}
-
-.listing-06 {
-    background: #ffffff;
-    color: white;
-    text-align: center;
-    background: url(../img/overlord.png);
-    background-size: cover;
-    background-position: center;
-    padding: 24px 32px;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-}
-.listing-06 .btn {
-    background: #c0351d ;
-    color: white;
-}
-.listing-06 .btn:hover {
-    background: #752011 ;
-    color: white;
-}
-/* Product Anime Listings END */
-
-
-/* Product Manga Listings */
-.listing-07 {
-    background: #ffffff;
-    color: white;
-    text-align: center;
-    background: url(../img/goblin-slayer.png);
-    background-size: cover;
-    background-position: center;
-    padding: 24px 32px;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-}
-.listing-07 .btn {
-    background: #20dd1a ;
-    color: white;
-}
-
-.listing-08 {
-    background: #ffffff;
-    color: white;
-    text-align: center;
-    background: url(../img/solo-leveling.png);
-    background-size: cover;
-    background-position: center;
-    padding: 24px 32px;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-}
-.listing-08 .btn {
-    background: #20dd1a ;
-    color: white;
-}
-
-.listing-09 {
-    background: #ffffff;
-    color: white;
-    text-align: center;
-    background: url(../img/lessa-the-crimson-knight.png);
-    background-size: cover;
-    background-position: center;
-    padding: 24px 32px;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-}
-.listing-09 .btn {
-    background: #20dd1a ;
-    color: white;
-}
-
-.listing-10 {
-    background: #ffffff;
-    color: white;
-    text-align: center;
-    background: url(../img/virus-girlfriend.png);
-    background-size: cover;
-    background-position: center;
-    padding: 24px 32px;
-    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-}
-.listing-10 .btn {
-    background: #20dd1a ;
-    color: white;
-}
-/* Product Manga Listings END */
+/* Weekly Deals END */
 
 .featured {
     font-size: 24px;
