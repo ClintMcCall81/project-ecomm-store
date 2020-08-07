@@ -77,8 +77,8 @@ img {
     grid-gap: 20px;
     /* Template format, i didnt know this existed till now. */
     grid-template-areas:
-    'showcase showcase top-box-a'
-    'showcase showcase top-box-a';
+    'showcase showcase showcase'
+    'showcase showcase showcase';
 }
 
 /* Assign Grid Content */
