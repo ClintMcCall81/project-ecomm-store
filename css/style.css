@@ -268,3 +268,12 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+@media (width: 360px) {
+
+    .box-listings {
+        grid-template-areas: 
+        'listing-01';
+    }
+
+}
